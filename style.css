@@ -1,0 +1,145 @@
+:root{
+
+    --ff-kumbh: 'Kumbh Sans', sans-serif;
+    --bc: hsl(185, 75%, 39%);
+    --tx-title:hsl(229, 23%, 23%);
+    --tx-paragraph:hsl(227, 10%, 46%);
+    --tx-paragraph2:hsl(0, 0%, 59%);
+
+
+}
+
+
+
+body{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bc);
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -70% 150%, 150% -100%;
+    
+
+}
+
+.card{
+
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    min-height: 380px;
+    gap:2rem;
+    background-color: white;
+
+}
+
+.cover{
+
+    position: relative;
+    display: flex;
+   
+}
+
+.photo{
+
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid white 3px;
+    width: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:70%;
+    
+}
+
+.info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+
+
+}
+
+.name{
+
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap:0.5rem;
+    
+    
+}
+
+.name h1{
+
+    font-family: var(--ff-kumbh);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--tx-title);
+
+
+}
+
+.info p{
+
+    text-align: center;
+    font-family: var(--ff-kumbh);
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--tx-paragraph);
+
+}
+
+
+
+hr{
+
+    border: 1px solid hsl(0, 0%, 59%);
+    opacity: 0.2;
+
+}
+
+.numbers{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numbers h2{
+
+
+    font-family: var(--ff-kumbh);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--tx-title);
+
+
+}
+.numbers p{
+
+    text-align: center;
+    font-family: var(--ff-kumbh);
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: var(--tx-paragraph2);
+    letter-spacing: 0.1rem;
+
+}
+
+.value{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.3rem;
+
+}
